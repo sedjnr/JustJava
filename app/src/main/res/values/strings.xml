@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JustJava</string>
+    <string name="Try">Try (+5)</string>
+    <string name="Drop">Drop Goal (+3)</string>
+    <string name="Conv">Conversion (+2)</string>
+    <string name="Pen">Penalty (+3)</string>
+
+</resources>

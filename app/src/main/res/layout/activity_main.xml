@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/background"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sed.justjava.MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:textAlignment="center"
+
+        android:text="Rugby Scores"
+        android:textColor="#000000"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAppearance="@style/Scores" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/try1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="@style/ScoreBoard"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/drop1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="@style/ScoreBoard"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/conv1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="@style/ScoreBoard"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/pen1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="@style/ScoreBoard"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 2"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/score2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Scores" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/try2"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/ScoreBoard"
+                        android:text="0"
+                        android:paddingTop="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:id="@+id/drop2"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/ScoreBoard"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:id="@+id/conv2"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/ScoreBoard"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:id="@+id/pen2"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/ScoreBoard"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:textAppearance="@style/ButtonStyle"
+                android:text="@string/Try"
+                android:onClick="score13"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="@string/Try"
+                android:textAppearance="@style/ButtonStyle"
+                android:onClick="score23"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="@string/Drop"
+                android:textAppearance="@style/ButtonStyle"
+                android:onClick="score12"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="@string/Drop"
+                android:textAppearance="@style/ButtonStyle"
+                android:onClick="score22"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="@string/Conv"
+                android:textAppearance="@style/ButtonStyle"
+                android:onClick="score11"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="@string/Conv"
+                android:textAppearance="@style/ButtonStyle"
+                android:onClick="score21"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/Pen"
+                android:textAppearance="@style/ButtonStyle"
+                android:onClick="score10"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/Pen"
+                android:textAppearance="@style/ButtonStyle"
+                android:onClick="score20"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="resetScore"
+            android:text="Reset"
+            android:layout_marginTop="50dp"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
